@@ -69,6 +69,15 @@
     background-color: $mainColor;
     color: white;
 
+    .itemContainer {
+      a {
+        color: white;
+        span {
+          color: white;
+        }
+      }
+    }
+
     .hamburger {
       span {
         &:first-child {

@@ -9,11 +9,12 @@ export default function Topbar({menuOpen, setMenuOpen}) {
           <a href="#intro" className="logo">genius.</a>
           <div className="itemContainer">
             <FaGithub style={{ height : '24px', marginRight: '5px', cursor : 'pointer' }}/>
-            <a href='https://github.com/jeanlouisHERVE'><span className="itemContent"> jeanlouisHERVE </span></a>
+            <a href='https://github.com/jeanlouisHERVE' target="_blank" className={`${menuOpen ? "active" : ""}`}><span className="itemContent"> jeanlouisHERVE </span></a>
           </div>
           <div className="itemContainer">
-            <FaLinkedinIn style={{ height : '24px', marginRight: '5px', cursor : 'pointer' }}/>
-           <a href="https://www.linkedin.com/in/jean-louisherve/"></a> <span className="itemContent"> </span>
+            <a href="https://www.linkedin.com/in/jean-louisherve" target="_blank" >
+              <FaLinkedinIn style={ menuOpen ? { height : '24px', marginRight: '5px', cursor : 'pointer', color: 'white'} : { height : '24px', marginRight: '5px', cursor : 'pointer', color: 'black'}}/>
+            </a> 
           </div>
           
         </div>
