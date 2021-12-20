@@ -42,7 +42,7 @@ export default function Works() {
   };
 
   return (
-    <div className="works">
+    <div className="works" id="works">
       <div 
         className='slider'
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -54,10 +54,10 @@ export default function Works() {
               <div className="leftContainer">
                 <div className="imgContainer">
                   <img src="assets/mobile.png" alt="" />
-                  <h2>{d.title}</h2>
-                  <p>{d.desc}</p> 
-                  <span>Projects</span>
                 </div>
+                <h2>{d.title}</h2>
+                <p>{d.desc}</p> 
+                <span>Projects</span>
               </div>
             </div>
             <div className="right">
