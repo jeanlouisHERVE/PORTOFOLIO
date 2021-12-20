@@ -1,5 +1,5 @@
 import './styles.scss';
-
+import { FaGithub, FaLinkedinIn} from 'react-icons/fa';
 
 export default function Topbar({menuOpen, setMenuOpen}) {
   return (
@@ -8,12 +8,12 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className="left">
           <a href="#intro" className="logo">genius.</a>
           <div className="itemContainer">
-            <span className="material-icons">person</span>
-            <span className="itemContent"> 0683740265</span>
+            <FaGithub style={{ height : '24px', marginRight: '5px', cursor : 'pointer' }}/>
+            <a href='https://github.com/jeanlouisHERVE'><span className="itemContent"> jeanlouisHERVE </span></a>
           </div>
           <div className="itemContainer">
-            <span className="material-icons">mail</span>
-            <span className="itemContent"> jeanlouis.herve@hotmail.fr</span>
+            <FaLinkedinIn style={{ height : '24px', marginRight: '5px', cursor : 'pointer' }}/>
+           <a href="https://www.linkedin.com/in/jean-louisherve/"></a> <span className="itemContent"> </span>
           </div>
           
         </div>
