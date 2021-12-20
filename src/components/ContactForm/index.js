@@ -41,7 +41,7 @@ const ContactForm = () => {
 
   const sendFeedback = (templateId, variables) => {
     window.emailjs
-      .send('service_to9395a', templateId, variables)
+      .send('service_kev8fow', templateId, variables)
       .then((res) => {
         successMessage();
         setName('');
@@ -76,7 +76,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (name && isEmail() && message) {
-      sendFeedback('template_v70uewh', {
+      sendFeedback('template_pee54nm', {
         name,
         company,
         phone,
