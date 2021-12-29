@@ -49,6 +49,9 @@ export default function Works() {
                   ))
                 }
                 </span> */}
+                <div className="links">
+                  {d.github && <><IconContext.Provider  value={{ color: "red", className: "global-class-name", size: "2em" }}><a href={d.github} target="_blank" ><FaGithub style={{ height : '24px', marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+                </div>
               </div>
             </div>
             <div className="right">
