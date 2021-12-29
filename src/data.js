@@ -57,11 +57,10 @@ export const workData = [
     icon: "iconMobile",
     title: "GetReadii",
     desc:
-      "Réalisation de la partie front-end de cette application destinée aux managers d'une entreprise afin de facilité l'arrivée de leurs nouvelles recrues. ",
+      "Réalisation de la partie front-end de cette application web destinée aux managers d'une entreprise afin de faciliter l'arrivée de leurs nouvelles recrues. ",
     technologies: ["React", "React-Router-Dom", "Redux", "SASS"],
     website: "https://fr.getreadii.com/",
     github: "",
-    online: true,
     img: "homeGetReadii",
   },
   {
@@ -73,7 +72,6 @@ export const workData = [
     technologies: ["React", "React-Router-Dom", "Redux", "SASS", "PropType"],
     website: "",
     github: "https://github.com/jeanlouisHERVE/STADIUM-FRONT",
-    online: false,
     img: "homeStadium",
   },
   {
@@ -85,7 +83,6 @@ export const workData = [
     technologies: ["PHP", "Javascript", "MySQL","HTML", "CSS"],
     website: "",
     github: "https://github.com/jeanlouisHERVE/GRECE-ANTIQUE",
-    online: false,
     img: "homeGreceAntique",
   },
   {
@@ -97,7 +94,6 @@ export const workData = [
     technologies: ["React", "Redux", "React-router-dom", "SASS", "StyledComponent"],
     website: "",
     github: "https://github.com/jeanlouisHERVE/PAULKICHILOV2",
-    online: false,
     img: "homePaulKichilov",
   },
   {
@@ -105,11 +101,10 @@ export const workData = [
     icon: "iconMobile",
     title: "Eshop-ZTM",
     desc:
-      "Site de e-commerce fictif réalisé pas-à-pas avec le cours zéro-To-Mastery",
+      "Site de e-commerce fictif réalisé pas-à-pas avec le cours de React en 42h de Zéro-To-Mastery",
     technologies: ["React", "Redux", "SASS", "React-router-dom", "Firebase"],
     website: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     github: "https://github.com/jeanlouisHERVE/E-COMMERCE-PROJECT", 
-    online: false,
     img: "homeEshopZTM",
   },
   {
@@ -117,11 +112,10 @@ export const workData = [
     icon: "iconMobile",
     title: "Portfolio",
     desc:
-      "Portfolio de présentation de mon travail",
+      "Portfolio de présentation des projets sur lesquels je travaille",
     technologies: ["React", "SASS"],
     website: "jeanlouisherve.fr",
     github: "https://github.com/jeanlouisHERVE/PORTOFOLIO", 
-    online: false,
     img: "",
   },
 ];

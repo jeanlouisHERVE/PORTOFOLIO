@@ -27,13 +27,13 @@ export default function Works() {
         {workData.map((d) => (
         <div key={d.id} className="container">
           <div className="item">
-            <div className="online">
+            {/* <div className="online">
               {
                 d.online 
                 ? <><IconContext.Provider  value={{ color: "green", className: "global-class-name", size: "2em" }}><HiStatusOnline /> </IconContext.Provider></>
-                : <><IconContext.Provider  value={{ color: "red", className: "global-class-name", size: "2em" }}><HiStatusOffline/></IconContext.Provider></>
+                : <><IconContext.Provider  value={{ color: "#dc143c", className: "global-class-name", size: "2em" }}><HiStatusOffline/></IconContext.Provider></>
               }
-             </div>
+             </div> */}
             <div className="left">
               <div className="leftContainer">
                 
@@ -42,18 +42,19 @@ export default function Works() {
                 </div>
                 <h2>{d.title}</h2>
                 <p>{d.desc}</p> 
-                {/* <span>Technologies :
-                {
-                 d && d.technologies && d.technologies.map(() => (
-
-                  ))
-                }
-                </span> */}
+                <div className="technologies">
+                 { d.technologies &&
+                  d.technologies.map((item, index) => (
+                  <><div className="technology" key={index}>{item}</div></>
+                  ))}
+                </div>
                 <div className="links">
                   {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.github} target="_blank" ><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
-                  {d.website && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" ><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+                  {d.website 
+                    ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" ><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>
+                    : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><HiStatusOffline/></IconContext.Provider></>
+                  }
                 </div>
-                <div className=""></div>
               </div>
             </div>
             <div className="right">
