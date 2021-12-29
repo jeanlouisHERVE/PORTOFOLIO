@@ -1,6 +1,7 @@
 import './styles.scss';
 import { useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import findImgByKey from '../../utils/img';
 
 export default function Works() {
 
@@ -8,7 +9,7 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
+      icon: "iconMobile",
       title: "Web Design",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
@@ -17,7 +18,7 @@ export default function Works() {
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
+      icon: "iconGlobe",
       title: "Mobile Application",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -26,7 +27,7 @@ export default function Works() {
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
+      icon: "iconWriting",
       title: "Branding",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -48,12 +49,12 @@ export default function Works() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-        <div className="container">
+        <div key={d.id} className="container">
           <div className="item">
             <div className="left">
               <div className="leftContainer">
                 <div className="imgContainer">
-                  <img src="assets/mobile.png" alt="" />
+                  <img src={findImgByKey(d.icon)} alt="" />
                 </div>
                 <h2>{d.title}</h2>
                 <p>{d.desc}</p> 
@@ -70,8 +71,8 @@ export default function Works() {
         </div>
         ))}
       </div>
-      <IoIosArrowBack style={{height: '50px', position: 'absolute', left:'100px', cursor:'pointer'}} onClick={() => handleClick("left")}/>
-      <IoIosArrowForward style={{height: '50px', position: 'absolute', right:'100px', cursor:'pointer'}} onClick={() => handleClick()}/>
+      <IoIosArrowBack style={{height: '50px', width:'50px', position: 'absolute', left:'100px', cursor:'pointer'}} onClick={() => handleClick("left")}/>
+      <IoIosArrowForward style={{height: '50px', width:'50px', position: 'absolute', right:'100px', cursor:'pointer'}} onClick={() => handleClick()}/>
     </div>
   )
 }

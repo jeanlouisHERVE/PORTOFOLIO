@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../PortfolioList";
 import "./styles.scss";
+import findImgByKey from "../../utils/img";
 import {
   featuredPortfolio,
   webPortfolio,
   mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -25,14 +24,6 @@ export default function Portfolio() {
       id: "mobile",
       title: "Mobile App",
     },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
   ];
 
   useEffect(() => {
@@ -46,12 +37,6 @@ export default function Portfolio() {
       case "mobile":
         setData(mobilePortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
       default:
         setData(featuredPortfolio);
     }
@@ -63,6 +48,7 @@ export default function Portfolio() {
       <ul>
         {list.map((item) => (
           <PortfolioList
+            key={item.id}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -72,9 +58,9 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
+          <div  key={d.id} className="item">
             <img
-              src={d.img}
+              src={findImgByKey(d.img)}
               alt=""
             />
             <h3>{d.title}</h3>

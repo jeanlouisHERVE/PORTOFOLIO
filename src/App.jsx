@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 import Topbar from "./components/Topbar";
 import Works from "./components/Works";
 import Intro from "./components/Intro";
