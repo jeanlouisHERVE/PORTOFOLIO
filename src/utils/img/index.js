@@ -1,3 +1,4 @@
+import dashboardManagerGetReadii from '../../../src/assets/img/dashboardManager-getReadii.png'
 import iconMobile from '../../../src/assets/mobile.png'
 import iconGlobe from '../../../src/assets/globe.png'
 import iconWriting from '../../../src/assets/writing.png'
@@ -20,6 +21,7 @@ const imgs = {
   homeGreceAntique,
   homePaulKichilov,
   homeStadium,
+  dashboardManagerGetReadii,
 };
 
 const findImgByKey = (imgKey) => imgs[imgKey];

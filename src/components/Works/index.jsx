@@ -1,10 +1,11 @@
 import './styles.scss';
 import { useState } from "react";
 import { IconContext } from "react-icons";
-import { FaGithub, FaChrome} from 'react-icons/fa';
+import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap} from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md'
 import { HiStatusOnline, HiStatusOffline } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { SiRedux, SiReactrouter, SiFirebase } from 'react-icons/si'
 import { workData } from '../../data.js';
 import findImgByKey from '../../utils/img';
 
@@ -38,15 +39,23 @@ export default function Works() {
               <div className="leftContainer">
                 
                 <div className="imgContainer">
-                  <img src={findImgByKey(d.icon)} alt="" />
+                <><IconContext.Provider  value={{ color: "black", size: "2em" }}><MdWeb/></IconContext.Provider></>
                 </div>
                 <h2>{d.title}</h2>
                 <p>{d.desc}</p> 
                 <div className="technologies">
                  { d.technologies &&
                   d.technologies.map((item, index) => (
-                  <><div className="technology" key={index}>{item}</div></>
-                  ))}
+                  ((item === "SASS") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaSass/></IconContext.Provider></div></> : null) ||
+                  ((item === "React") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaReact/></IconContext.Provider></div></> : null) ||
+                  ((item === "Redux") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiRedux/></IconContext.Provider></div></> : null) ||
+                  ((item === "HTML") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaHtml5/></IconContext.Provider></div></> : null) ||
+                  ((item === "CSS") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaCss3Alt/></IconContext.Provider></div></> : null) ||
+                  ((item === "React-router-dom") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiReactrouter/></IconContext.Provider></div></> : null) ||
+                  ((item === "Firebase") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiFirebase/></IconContext.Provider></div></> : null) ||
+                  ((item === "PHP") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaPhp/></IconContext.Provider></div></> : null) ||
+                  ((item === "Bootstrap") ? <><div className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaBootstrap/></IconContext.Provider></div></> : null) 
+                  ))} 
                 </div>
                 <div className="links">
                   {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.github} target="_blank" ><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
