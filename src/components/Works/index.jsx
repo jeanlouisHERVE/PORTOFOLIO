@@ -1,7 +1,7 @@
 import './styles.scss';
 import { useState } from "react";
 import { IconContext } from "react-icons";
-import { FaGithub} from 'react-icons/fa';
+import { FaGithub, FaChrome} from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md'
 import { HiStatusOnline, HiStatusOffline } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -50,8 +50,10 @@ export default function Works() {
                 }
                 </span> */}
                 <div className="links">
-                  {d.github && <><IconContext.Provider  value={{ color: "red", className: "global-class-name", size: "2em" }}><a href={d.github} target="_blank" ><FaGithub style={{ height : '24px', marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+                  {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.github} target="_blank" ><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+                  {d.website && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" ><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
                 </div>
+                <div className=""></div>
               </div>
             </div>
             <div className="right">
