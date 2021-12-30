@@ -46,11 +46,11 @@ export default function Works() {
                 <div className="technologies">
                  { d.technologies &&
                   d.technologies.map((item, index) => (
-                  ((item === "SASS") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaSass/></IconContext.Provider></div></> : null) ||
-                  ((item === "React") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaReact/></IconContext.Provider></div></> : null) ||
-                  ((item === "Redux") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiRedux/></IconContext.Provider></div></> : null) ||
-                  ((item === "HTML") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaHtml5/></IconContext.Provider></div></> : null) ||
-                  ((item === "CSS") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaCss3Alt/></IconContext.Provider></div></> : null) ||
+                  ((item === "SASS") ? <><div className="technology--container"><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaSass/></IconContext.Provider></div></div></> : null) ||
+                  ((item === "React") ? <><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaReact/></IconContext.Provider></div></> : null) ||
+                  ((item === "Redux") ? <><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><SiRedux/></IconContext.Provider></div></> : null) ||
+                  ((item === "HTML") ? <><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaHtml5/></IconContext.Provider></div></> : null) ||
+                  ((item === "CSS") ? <><div key={index} className="technology" ><IconContext.Provider title={item}  value={{ color: "black", size: "2em" }}><FaCss3Alt/></IconContext.Provider></div></> : null) ||
                   ((item === "React-router-dom") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiReactrouter/></IconContext.Provider></div></> : null) ||
                   ((item === "Firebase") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiFirebase/></IconContext.Provider></div></> : null) ||
                   ((item === "PHP") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaPhp/></IconContext.Provider></div></> : null) ||

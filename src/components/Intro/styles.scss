@@ -24,7 +24,7 @@
       float: right;
 
       @include mobile{
-        align-items: flex-start;
+        align-items: center;
       }
     }
   }
