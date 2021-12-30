@@ -4,7 +4,7 @@
 
 import { useState } from 'react';
 import './styles.scss';
-import contact from './avataaars6.svg';
+import profil from './profil.jpg';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -91,7 +91,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form">
-      <div className="contact__left--img" style={{ backgroundImage: `url(${contact})`, backgroundSize: 'cover', backgroundPosition: '70% 50%' }} />
+      <div className="contact__left--img" style={{ backgroundImage: `url(${profil})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
       <div className="form-content">
         <input
           type="text"

@@ -38,7 +38,7 @@ export const webPortfolio = [
     id: 4,
     title: "jeanlouisherve.fr",
     year: "2021",
-    img: '',
+    img: 'homePortfolio',
   },
 ];
 
@@ -54,6 +54,7 @@ export const mobilePortfolio = [
 export const workData = [
   {
     id: "1",
+    year: "2021",
     icon: "MdWeb",
     title: "GetReadii",
     desc:
@@ -65,6 +66,7 @@ export const workData = [
   },
   {
     id: "2",
+    year: "2021",
     icon: "MdWeb",
     title: "Stadium",
     desc:
@@ -76,6 +78,7 @@ export const workData = [
   },
   {
     id: "3",
+    year: "2021",
     icon: "MdWeb",
     title: "GreceAntique.fr",
     desc:
@@ -87,17 +90,19 @@ export const workData = [
   },
   {
     id: "4",
+    year: "2021",
     icon: "MdWeb",
     title: "PaulKichilov.com",
     desc:
       "Site de l'artiste Paul Kichilov pour exposer ses oeuvres, présenter ses spectacles et bientôt vendre ses réalisations",
-    technologies: ["React", "Redux", "React-router-dom", "SASS", "StyledComponent"],
+    technologies: ["React", "Redux", "React-router-dom", "SASS", "Styled-Component"],
     website: "",
     github: "https://github.com/jeanlouisHERVE/PAULKICHILOV2",
     img: "homePaulKichilov",
   },
   {
     id: "5",
+    year: "2021",
     icon: "MdWeb",
     title: "Eshop-ZTM",
     desc:
@@ -109,6 +114,7 @@ export const workData = [
   },
   {
     id: "6",
+    year: "2021",
     icon: "MdWeb",
     title: "Portfolio",
     desc:
@@ -116,6 +122,6 @@ export const workData = [
     technologies: ["React", "SASS"],
     website: "jeanlouisherve.fr",
     github: "https://github.com/jeanlouisHERVE/PORTOFOLIO", 
-    img: "",
+    img: "homePortfolio",
   },
 ];

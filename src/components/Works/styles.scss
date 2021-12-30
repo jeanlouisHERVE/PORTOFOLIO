@@ -89,7 +89,17 @@
             flex-direction: column;
             justify-content: space-between;
 
-            
+            .year {
+              background-color: brown;
+              width: 40px;
+              border-radius: 20px;
+              color: white;
+              font-weight: 500;
+              padding: 2px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
 
             .imgContainer {
               width: 40px;

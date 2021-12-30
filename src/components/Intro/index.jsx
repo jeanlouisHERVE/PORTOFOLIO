@@ -1,5 +1,5 @@
 import './styles.scss';
-
+import profil from "./profil.jpg";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
@@ -19,7 +19,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/Jean-Louis.svg" alt="" />
+          <div className="imgContent" style={{height:"500px", width:"500px", borderRadius:"50%", backgroundImage: `url(${profil})`, backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
         </div>
       </div>
       <div className="right">
