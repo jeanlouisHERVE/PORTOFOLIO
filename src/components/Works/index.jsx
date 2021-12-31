@@ -1,7 +1,7 @@
 import './styles.scss';
 import { useState } from "react";
 import { IconContext } from "react-icons";
-import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap} from 'react-icons/fa';
+import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe} from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md'
 import { HiStatusOffline } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -57,6 +57,7 @@ export default function Works() {
                   ((item === "Bootstrap") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaBootstrap/></IconContext.Provider></div></> : null) ||
                   ((item === "Javascript") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiJavascript/></IconContext.Provider></div></> : null) ||
                   ((item === "Styled-Component") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiStyledcomponents/></IconContext.Provider></div></> : null) ||
+                  ((item === "Stripe") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaCcStripe/></IconContext.Provider></div></> : null) ||
                   ((item === "MySQL") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiMysql/></IconContext.Provider></div></> : null) 
                   ))} 
                 </div>
