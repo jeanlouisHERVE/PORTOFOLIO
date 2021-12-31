@@ -92,7 +92,7 @@ export const workData = [
     id: "4",
     year: "2021",
     icon: "MdWeb",
-    title: "PaulKichilov.com",
+    title: "PaulKichilov",
     desc:
       "Site de l'artiste Paul Kichilov pour exposer ses oeuvres, présenter ses spectacles et bientôt vendre ses réalisations",
     technologies: ["React", "Redux", "React-router-dom", "SASS", "Styled-Component"],

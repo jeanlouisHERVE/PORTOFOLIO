@@ -1,8 +1,7 @@
 import './styles.scss';
-import profil from "./profil.jpg";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-
+import findImgByKey from "../../utils/img"
 export default function Intro() {
   const textRef = useRef();
 
@@ -19,7 +18,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <div className="imgContent" style={{height:"500px", width:"500px", borderRadius:"50%", backgroundImage: `url(${profil})`, backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
+          <div className="imgContent" style={{height:"500px", width:"500px", borderRadius:"50%", backgroundImage: `url(${findImgByKey('profil')})`, backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
         </div>
       </div>
       <div className="right">
@@ -27,7 +26,7 @@ export default function Intro() {
           <h2>Bonjour, je suis</h2>
           <h1>Jean-Louis HERVE</h1>
           <h3>
-             <span ref={textRef}></span> Front-End Developpeur
+             <span ref={textRef}></span> Front-End Développeur
           </h3>
         </div>
         <a href="#portfolio">

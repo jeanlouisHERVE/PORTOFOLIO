@@ -4,7 +4,7 @@
 
 import { useState } from 'react';
 import './styles.scss';
-import profil from './profil.jpg';
+import findImgByKey from '../../utils/img';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -91,7 +91,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form">
-      <div className="contact__left--img" style={{ backgroundImage: `url(${profil})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+      <div className="contact__left--img" style={{ backgroundImage: `url(${findImgByKey('profil')}`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
       <div className="form-content">
         <input
           type="text"

@@ -14,16 +14,16 @@ export default function Portfolio() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "Projets Collectifs",
     },
     {
       id: "web",
-      title: "Web App",
+      title: "Applications Web",
     },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
+    // {
+    //   id: "mobile",
+    //   title: "Mobile App",
+    // },
   ];
 
   useEffect(() => {
@@ -34,9 +34,9 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
+      // case "mobile":
+      //   setData(mobilePortfolio);
+      //   break;
       default:
         setData(featuredPortfolio);
     }
