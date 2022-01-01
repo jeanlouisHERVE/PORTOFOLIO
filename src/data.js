@@ -70,7 +70,7 @@ export const workData = [
     icon: "MdWeb",
     title: "Stadium",
     desc:
-      "Projet de fin de formation chez O'Clock, Stadium a été pensé pour être une application web à destination des associations sportives dans le but de faciliter leur gestion administrative.",
+      "Projet de fin de formation chez O'Clock, Stadium est une application web à destination des associations sportives dans le but de faciliter leur gestion administrative.",
     technologies: ["React", "React-Router-Dom", "Redux", "SASS", "PropType"],
     website: "",
     github: "https://github.com/jeanlouisHERVE/STADIUM-FRONT",
@@ -80,7 +80,7 @@ export const workData = [
     id: "3",
     year: "2021",
     icon: "MdWeb",
-    title: "GreceAntique.fr",
+    title: "GreceAntique",
     desc:
       "Reconstruction d'un site que j'alimentais d'articles sur la Grèce Antique de 2009 à 2012.",
     technologies: ["PHP", "Javascript", "MySQL","HTML", "CSS", "Bootstrap"],

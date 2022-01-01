@@ -1,34 +1,42 @@
-
+@import "../../global.scss";
 
 .CardWorksMobile--container {
   width: 40%;
-  height: 25%;
+  height: 27%;
   background-color: white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
+  position: relative;
 
   &:hover {
     transform: scale(1.05);
   }
-
-  h1 {
-    font-size: 20px;
-    align-self: center;
+  .github {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    h1 {
+      font-size: 17px;
+      align-self: center;
+      margin-right: 5px;
+    }
   }
-
+  
   p {
     text-align: justify;
+    font-size: 12px;
   }
 
   .technologies {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     height: auto;
 
@@ -36,5 +44,7 @@
       margin-right: 5px;
     }
   }
+
+  
 
 }

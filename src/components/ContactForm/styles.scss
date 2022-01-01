@@ -12,6 +12,12 @@
   justify-content: center;
   font-family: $roboto;
 
+  @include mobile {
+    width: 70%;
+    height: 70%;
+    justify-content: space-around;
+  }
+
 
   .contact__left--img {
     height: 100px;
@@ -20,7 +26,12 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
+
+    @include mobile {
+      display: none;
+    }
   }
+  
 
   h2 {
     margin-top: 20px;
@@ -39,7 +50,7 @@
     textarea {
       background: none;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 500;
       border-style: none;
       border-bottom: 1px solid black;
@@ -60,7 +71,6 @@
 
     input {
       padding: 24px 0 12px;
-      
     }
 
     .email-content {
@@ -126,7 +136,7 @@
   }
 
   .button {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-top: 1em;
     border: 2px solid black;
     border-radius: 20px;

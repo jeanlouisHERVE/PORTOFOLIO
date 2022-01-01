@@ -18,12 +18,20 @@
       display: flex;
       align-items: center;
 
+      @include mobile {
+        align-items: space-between;
+      }
+
       .logo {
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        
+        @include mobile {
+          margin-right: 10px;
+        }
 
       }
 
@@ -32,9 +40,14 @@
         align-items: center;
         margin-left: 30px;
 
+        @include mobile {
+          margin-left: 10px;
+        }
+
         a {
           text-decoration: none;
           color: black;
+
         }
 
         .itemContent {
