@@ -1,15 +1,15 @@
 import './styles.scss';
 import { useState } from "react";
+import { workData } from '../../data.js';
+import findImgByKey from '../../utils/img';
+
+//import icons from react-icons
 import { IconContext } from "react-icons";
 import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe} from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md'
 import { HiStatusOffline } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { SiRedux, SiReactrouter, SiFirebase, SiMysql, SiJavascript, SiStyledcomponents } from 'react-icons/si'
-import { workData } from '../../data.js';
-import findImgByKey from '../../utils/img';
-
-//import icons
 
 export default function Works() {
 
