@@ -18,7 +18,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <div className="imgContent" style={{height:"500px", width:"500px", borderRadius:"50%", backgroundImage: `url(${findImgByKey('profil')})`, backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
+          <div className="imgContent" />
         </div>
       </div>
       <div className="right">
@@ -30,7 +30,7 @@ export default function Intro() {
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+          <img src={findImgByKey('arrowDown')} alt="arrow down" />
         </a>
       </div>
     </div>

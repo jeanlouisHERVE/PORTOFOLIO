@@ -10,6 +10,7 @@ import homePortfolio from '../../../src/assets/img/home-portfolio.png';
 import homeStadium from '../../../src/assets/img/home-stadium600.png';
 import profil from '../../../src/assets/img/profil500.png'
 import shakeHands from '../../../src/assets/shake.svg';
+import arrowDown from '../../../src/assets/down.png'
 
 const imgs = {
   profil,
@@ -24,6 +25,7 @@ const imgs = {
   homePortfolio,
   homeStadium,
   dashboardManagerGetReadii,
+  arrowDown,
 };
 
 const findImgByKey = (imgKey) => imgs[imgKey];

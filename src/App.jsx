@@ -1,5 +1,5 @@
 import "./app.scss";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
@@ -10,7 +10,20 @@ import Intro from "./components/Intro";
 import Menu from "./components/Menu";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [mobile, setMobile] = useState(false);
+  
+  useEffect(() => {
+    const screenWidth = window.innerWidth; 
+    const screenSize = ( width ) => {
+      if (width < 600 ) {setMobile(true)} 
+      return setMobile
+      }
+    screenSize(screenWidth)
+    console.log(mobile)
+  }, []);
+
+  console.log(mobile)
   return (
     <div className="App">
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -18,7 +31,7 @@ function App() {
      <div className="sections">
         <Intro />
         <Portfolio />
-        <Works />
+        { mobile ? null : <Works />} 
         {/* <Testimonials /> */}
         <Contact />
      </div>

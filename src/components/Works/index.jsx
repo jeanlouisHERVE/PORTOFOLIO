@@ -9,6 +9,8 @@ import { SiRedux, SiReactrouter, SiFirebase, SiMysql, SiJavascript, SiStyledcomp
 import { workData } from '../../data.js';
 import findImgByKey from '../../utils/img';
 
+//import icons
+
 export default function Works() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
