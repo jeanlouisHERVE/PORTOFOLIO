@@ -1,0 +1,40 @@
+
+
+.CardWorksMobile--container {
+  width: 40%;
+  height: 25%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h1 {
+    font-size: 20px;
+    align-self: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+
+    .technology {
+      margin-right: 5px;
+    }
+  }
+
+}

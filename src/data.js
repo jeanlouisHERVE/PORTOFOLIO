@@ -106,7 +106,7 @@ export const workData = [
     icon: "MdWeb",
     title: "Eshop-ZTM",
     desc:
-      "Site de e-commerce fictif réalisé pas-à-pas avec le cours de React en 42h de Zéro-To-Mastery",
+      "Site de e-commerce fictif réalisé pas-à-pas avec le cours de React de Zéro-To-Mastery",
     technologies: ["React", "Redux", "SASS", "React-router-dom", "Firebase", "Stripe"],
     website: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     github: "https://github.com/jeanlouisHERVE/E-COMMERCE-PROJECT", 

@@ -1,13 +1,13 @@
 import './styles.scss';
 import { workData } from '../../data.js';
+import CardWorksMobile from '../CardWorksMobile';
 
 const WorksMobile = () => (
 
-<div>
+<div className="Cards--container">
  {
-  workData.map((work)=>(
-
-
+  workData.map((project)=>(
+    <CardWorksMobile key={project.id} project={project}/>
   ))
  }
 
