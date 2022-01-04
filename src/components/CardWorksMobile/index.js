@@ -14,7 +14,7 @@ const CardWorksMobile = ({project}) => {
   <div className="CardWorksMobile--container">
        <div className="github">
         <h1>{title}</h1>
-        {github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={github} target="_blank" ><FaGithub style={{cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+        {github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={github} target="_blank" rel="noreferre" ><FaGithub style={{cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
       </div>
       <p>{desc}</p>
       <div className="technologies">

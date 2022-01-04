@@ -64,12 +64,12 @@ export default function Works() {
                   ))} 
                 </div>
                 <div className="links">
-                  {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.github} target="_blank" ><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+                  {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.github} target="_blank" rel="noreferre"><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
                   {d.website 
-                    ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" ><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>
+                    ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" rel="noreferre"><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>
                     : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><HiStatusOffline/></IconContext.Provider></>
                   }
-                  {d.course && d.course ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.course} target="_blank" ><FaChalkboardTeacher style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></> : null}
+                  {d.course && d.course ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.course} target="_blank" rel="noreferre"><FaChalkboardTeacher style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></> : null}
                 
                 </div>
               </div>

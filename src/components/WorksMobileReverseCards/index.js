@@ -1,6 +1,5 @@
 import './styles.scss';
 import { workData } from '../../data.js';
-import CardWorksMobile from '../CardWorksMobile';
 import ReverseCard from '../ReverseCard';
 
 const WorksMobileReverseCards = () => (
