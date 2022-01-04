@@ -5,7 +5,7 @@ import findImgByKey from '../../utils/img';
 
 //import icons from react-icons
 import { IconContext } from "react-icons";
-import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe} from 'react-icons/fa';
+import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe, FaChalkboardTeacher} from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md'
 import { HiStatusOffline } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -69,6 +69,8 @@ export default function Works() {
                     ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" ><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>
                     : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><HiStatusOffline/></IconContext.Provider></>
                   }
+                  {d.course && d.course ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.course} target="_blank" ><FaChalkboardTeacher style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></> : null}
+                
                 </div>
               </div>
             </div>

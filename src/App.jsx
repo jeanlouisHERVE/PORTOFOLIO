@@ -6,7 +6,7 @@ import Portfolio from "./components/Portfolio";
 // import Testimonials from "./components/Testimonials";
 import Topbar from "./components/Topbar";
 import Works from "./components/Works";
-import WorksMobile from './components/WorksMobile';
+import WorksMobileReverseCards from './components/WorksMobileReverseCards';
 import Intro from "./components/Intro";
 import Menu from "./components/Menu";
 
@@ -21,10 +21,8 @@ function App() {
       return setMobile
       }
     screenSize(screenWidth)
-    console.log(mobile)
-  }, []);
+  },[mobile]);
 
-  console.log(mobile)
   return (
     <div className="App">
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -32,7 +30,7 @@ function App() {
      <div className="sections">
         <Intro />
         <Portfolio />
-        { mobile ? <WorksMobile/> : <Works />} 
+        { mobile ? <WorksMobileReverseCards/> : <Works />} 
         {/* <Testimonials /> */}
         <Contact />
      </div>

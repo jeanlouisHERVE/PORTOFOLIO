@@ -3,17 +3,20 @@ import { workData } from '../../data.js';
 import CardWorksMobile from '../CardWorksMobile';
 import ReverseCard from '../ReverseCard';
 
-const WorksMobile = () => (
+const WorksMobileReverseCards = () => (
 
 <div className="Cards--container">
- {/* {
+  {
   workData.map((project)=>(
-    <CardWorksMobile key={project.id} project={project}/>
+    <ReverseCard 
+      key={project.id} 
+      project={project}
+      variant="click"
+    />
   ))
- } */}
-  <ReverseCard/>
+ }
 </div>
 
 ); 
 
-export default WorksMobile 
+export default WorksMobileReverseCards

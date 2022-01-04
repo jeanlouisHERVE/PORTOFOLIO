@@ -59,7 +59,7 @@ export const workData = [
     title: "GetReadii",
     desc:
       "Réalisation de la partie front-end de cette application web destinée aux managers d'une entreprise afin de faciliter l'arrivée de leurs nouvelles recrues. ",
-    technologies: ["React", "React-router-dom", "Redux", "SASS"],
+    technologies: ["React", "React-router-dom", "Redux", "SASS","Firebase"],
     website: "https://fr.getreadii.com/",
     github: "",
     img: "homeGetReadii",
@@ -107,8 +107,9 @@ export const workData = [
     title: "Eshop-ZTM",
     desc:
       "Site de e-commerce fictif réalisé pas-à-pas avec le cours de React de Zéro-To-Mastery",
-    technologies: ["React", "Redux", "SASS", "React-router-dom", "Firebase", "Stripe"],
-    website: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
+    technologies: ["React", "Redux", "SASS", "React-router-dom", "Firebase", "Stripe", "Styled-Component"],
+    website: "https://pure-inlet-88313.herokuapp.com/signin",
+    course: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     github: "https://github.com/jeanlouisHERVE/E-COMMERCE-PROJECT", 
     img: "homeEshopZTM",
   },
