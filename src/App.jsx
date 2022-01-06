@@ -6,7 +6,7 @@ import Portfolio from "./components/Portfolio";
 // import Testimonials from "./components/Testimonials";
 import Topbar from "./components/Topbar";
 import Works from "./components/Works";
-import WorksMobileReverseCards from './components/WorksMobileReverseCards';
+import WorksMobile from './components/WorksMobile';
 import Intro from "./components/Intro";
 import Menu from "./components/Menu";
 
@@ -30,7 +30,7 @@ function App() {
      <div className="sections">
         <Intro />
         <Portfolio />
-        { mobile ? <WorksMobileReverseCards/> : <Works />} 
+        { mobile ? <WorksMobile/> : <Works />} 
         {/* <Testimonials /> */}
         <Contact />
      </div>

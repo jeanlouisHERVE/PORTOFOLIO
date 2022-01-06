@@ -5,13 +5,13 @@ import ReverseCard from '../ReverseCard';
 
 const WorksMobile = () => (
 
-<div className="Cards--container">
- {/* {
+<div className="Cards--container" id="works">
+ {
   workData.map((project)=>(
     <CardWorksMobile key={project.id} project={project}/>
   ))
- } */}
-  <ReverseCard/>
+ }
+  {/* <ReverseCard/> */}
 </div>
 
 ); 

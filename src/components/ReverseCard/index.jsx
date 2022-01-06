@@ -1,5 +1,4 @@
 import './styles.scss';
-import findImgByKey from '../../utils/img';
 import { useState } from 'react';
 
 const ReverseCard = ({project, variant}) => {
@@ -21,12 +20,12 @@ const ReverseCard = ({project, variant}) => {
       >
         <div className="card front">
           <div className="card-body ">
-            <img src={findImgByKey(project.img)} alt=""/>
+            <p className="card-text">Front</p>
           </div>
         </div>
         <div className="card back">
           <div className="card-body " >
-            <p className="card-text">{project.title}</p>
+            <p className="card-text">Back</p>
           </div>
         </div>
       </div>
