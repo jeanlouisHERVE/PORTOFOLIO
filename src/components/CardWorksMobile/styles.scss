@@ -19,33 +19,65 @@
   &:hover {
     transform: scale(1.05);
   }
-  .github {
+
+  &:hover .CardWorksMobile--overlay {
+    opacity: 1;
+  }
+
+  .CardWorksMobile--header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0px;
     h1 {
       font-size: 17px;
       align-self: center;
       margin-right: 5px;
+      text-align: center;
     }
   }
-  
-  p {
-    text-align: justify;
-    font-size: 12px;
-  }
 
-  .technologies {
+  .CardWorksMobile--overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .technology {
-      margin-right: 5px;
+    .CardWorksMobile--github {
+      margin-bottom: 10px;
     }
-  }
+    
+    
+    p {
+      text-align: justify;
+      font-size: 12px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: justify;
+      padding: 0 10px;
+    }
 
-  
+    .CardWorksMobile--technologies {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: auto;
+
+      .CardWorksMobile--technology {
+        margin-right: 5px;
+      }
+    }
+
+  }
 
 }

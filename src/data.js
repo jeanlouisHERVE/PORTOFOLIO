@@ -63,6 +63,7 @@ export const workData = [
     website: "https://fr.getreadii.com/",
     github: "",
     img: "homeGetReadii",
+    mobileImg: "dashboardManagerGetReadii",
   },
   {
     id: "2",
@@ -75,6 +76,7 @@ export const workData = [
     website: "",
     github: "https://github.com/jeanlouisHERVE/STADIUM-FRONT",
     img: "homeStadium",
+    mobileImg: "",
   },
   {
     id: "3",
@@ -87,6 +89,7 @@ export const workData = [
     website: "",
     github: "https://github.com/jeanlouisHERVE/GRECE-ANTIQUE",
     img: "homeGreceAntique",
+    mobileImg: "homeGreceAntique",
   },
   {
     id: "4",
@@ -99,6 +102,7 @@ export const workData = [
     website: "",
     github: "https://github.com/jeanlouisHERVE/PAULKICHILOV2",
     img: "homePaulKichilov",
+    mobileImg: "homePaulKichilov",
   },
   {
     id: "5",
@@ -112,6 +116,7 @@ export const workData = [
     course: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     github: "https://github.com/jeanlouisHERVE/E-COMMERCE-PROJECT", 
     img: "homeEshopZTM",
+    mobileImg: "homeEshopZTM",
   },
   {
     id: "6",
@@ -124,5 +129,6 @@ export const workData = [
     website: "jeanlouisherve.fr",
     github: "https://github.com/jeanlouisHERVE/PORTOFOLIO", 
     img: "homePortfolio",
+    mobileImg: "homePortfolio",
   },
 ];
