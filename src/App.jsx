@@ -12,17 +12,16 @@ import Menu from "./components/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mobile, setMobile] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
   
-  useEffect(() => {
-    const screenWidth = window.innerWidth; 
-    const screenSize = ( width ) => {
-      if (width < 600 ) {setMobile(true)} 
-      return setMobile
-      }
-    screenSize(screenWidth)
-  },[mobile]);
-
+  const renderComponent = () => {
+    if (width < 600) {
+      return <WorksMobile/>;
+    } else {
+      return <Works />;
+    }
+  }
+    
   return (
     <div className="App">
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -30,7 +29,7 @@ function App() {
      <div className="sections">
         <Intro />
         <Portfolio />
-        { mobile ? <WorksMobile/> : <Works />} 
+        {renderComponent()} 
         {/* <Testimonials /> */}
         <Contact />
      </div>
