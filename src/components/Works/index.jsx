@@ -67,10 +67,10 @@ export default function Works() {
                 <div className="links">
                   {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Github" placement="bottom"><a href={d.github} target="_blank" rel="noreferre"><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></Tooltip></IconContext.Provider></>}
                   {d.website 
-                    ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" rel="noreferre"><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>
-                    : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><HiStatusOffline/></IconContext.Provider></>
+                    ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Site internet" placement="bottom"><a href={d.website} target="_blank" rel="noreferre"><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></Tooltip></IconContext.Provider></>
+                    : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Non publié" placement="bottom"><HiStatusOffline/></Tooltip></IconContext.Provider></>
                   }
-                  {d.course && d.course ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.course} target="_blank" rel="noreferre"><FaChalkboardTeacher style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></> : null}
+                  {d.course && d.course ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Cours" placement="bottom"><a href={d.course} target="_blank" rel="noreferre"><FaChalkboardTeacher style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></Tooltip></IconContext.Provider></> : null}
                 
                 </div>
               </div>
