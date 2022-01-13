@@ -2,6 +2,7 @@ import './styles.scss';
 import findImgByKey from '../../utils/img'
 
 //import icons from react-icons
+import { Tooltip } from '@mui/material';
 import { IconContext } from "react-icons";
 import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe} from 'react-icons/fa';
 import { SiRedux, SiReactrouter, SiFirebase, SiMysql, SiJavascript, SiStyledcomponents } from 'react-icons/si'
@@ -16,14 +17,14 @@ const CardWorksMobile = ({project}) => {
       <img src={findImgByKey(mobileImg)} alt=""/>
     <div className="CardWorksMobile--overlay">
       <div className="CardWorksMobile--github">
-        {github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={github} target="_blank" rel="noreferre" ><FaGithub style={{cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+        {github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={github} target="_blank" rel="noreferre" ><Tooltip title="Github" placement="top-start"><FaGithub style={{cursor : 'pointer', color: 'black' }}/></Tooltip></a></IconContext.Provider></>}
       </div>
       <p>{desc}</p>
       <div className="CardWorksMobile--technologies">
         { technologies &&
         technologies.map((item, index) => (
         ((item === "SASS") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider title={item} value={{ color: "black", size: "1em" }}><FaSass/></IconContext.Provider></div></> : null) ||
-        ((item === "React") ? <><div key={index} className="CardWorksMobile--echnology" ><IconContext.Provider title={item} value={{ color: "black", size: "1em" }}><FaReact/></IconContext.Provider></div></> : null) ||
+        ((item === "React") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider title={item} value={{ color: "black", size: "1em" }}><FaReact/></IconContext.Provider></div></> : null) ||
         ((item === "Redux") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider title={item} value={{ color: "black", size: "1em" }}><SiRedux/></IconContext.Provider></div></> : null) ||
         ((item === "HTML") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider title={item} value={{ color: "black", size: "1em" }}><FaHtml5/></IconContext.Provider></div></> : null) ||
         ((item === "CSS") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider title={item}  value={{ color: "black", size: "1em" }}><FaCss3Alt/></IconContext.Provider></div></> : null) ||

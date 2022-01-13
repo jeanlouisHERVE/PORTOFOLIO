@@ -4,6 +4,7 @@ import { workData } from '../../data.js';
 import findImgByKey from '../../utils/img';
 
 //import icons from react-icons
+import { Tooltip } from '@mui/material';
 import { IconContext } from "react-icons";
 import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe, FaChalkboardTeacher} from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md'
@@ -48,23 +49,23 @@ export default function Works() {
                 <div className="technologies">
                  { d.technologies &&
                   d.technologies.map((item, index) => (
-                  ((item === "SASS") ? <><div className="technology--container"><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaSass/></IconContext.Provider></div></div></> : null) ||
-                  ((item === "React") ? <><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaReact/></IconContext.Provider></div></> : null) ||
-                  ((item === "Redux") ? <><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><SiRedux/></IconContext.Provider></div></> : null) ||
-                  ((item === "HTML") ? <><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaHtml5/></IconContext.Provider></div></> : null) ||
-                  ((item === "CSS") ? <><div key={index} className="technology" ><IconContext.Provider title={item}  value={{ color: "black", size: "2em" }}><FaCss3Alt/></IconContext.Provider></div></> : null) ||
-                  ((item === "React-router-dom") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiReactrouter/></IconContext.Provider></div></> : null) ||
-                  ((item === "Firebase") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiFirebase/></IconContext.Provider></div></> : null) ||
-                  ((item === "PHP") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaPhp/></IconContext.Provider></div></> : null) ||
-                  ((item === "Bootstrap") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaBootstrap/></IconContext.Provider></div></> : null) ||
-                  ((item === "Javascript") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiJavascript/></IconContext.Provider></div></> : null) ||
-                  ((item === "Styled-Component") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiStyledcomponents/></IconContext.Provider></div></> : null) ||
-                  ((item === "Stripe") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaCcStripe/></IconContext.Provider></div></> : null) ||
-                  ((item === "MySQL") ? <><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiMysql/></IconContext.Provider></div></> : null) 
+                  ((item === "SASS") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider value={{ color: "black", size: "2em" }}><FaSass/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "React") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaReact/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "Redux") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><SiRedux/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "HTML") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider title={item} value={{ color: "black", size: "2em" }}><FaHtml5/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "CSS") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider title={item}  value={{ color: "black", size: "2em" }}><FaCss3Alt/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "React-router-dom") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiReactrouter/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "Firebase") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiFirebase/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "PHP") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaPhp/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "Bootstrap") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaBootstrap/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "Javascript") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiJavascript/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "Styled-Component") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiStyledcomponents/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "Stripe") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><FaCcStripe/></IconContext.Provider></div></Tooltip></> : null) ||
+                  ((item === "MySQL") ? <><Tooltip title={item} followCursor={true}><div key={index} className="technology" ><IconContext.Provider  value={{ color: "black", size: "2em" }}><SiMysql/></IconContext.Provider></div></Tooltip></> : null) 
                   ))} 
                 </div>
                 <div className="links">
-                  {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.github} target="_blank" rel="noreferre"><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>}
+                  {d.github && <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Github" placement="bottom"><a href={d.github} target="_blank" rel="noreferre"><FaGithub style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></Tooltip></IconContext.Provider></>}
                   {d.website 
                     ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><a href={d.website} target="_blank" rel="noreferre"><FaChrome style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></IconContext.Provider></>
                     : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><HiStatusOffline/></IconContext.Provider></>
