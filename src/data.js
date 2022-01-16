@@ -112,7 +112,7 @@ export const workData = [
     desc:
       "Site de e-commerce fictif réalisé pas-à-pas avec le cours de React de Zéro-To-Mastery",
     technologies: ["React", "Redux", "SASS", "React-router-dom", "Firebase", "Stripe", "Styled-Component"],
-    website: "https://pure-inlet-88313.herokuapp.com/signin",
+    website: "https://pure-inlet-88313.herokuapp.com/",
     course: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     github: "https://github.com/jeanlouisHERVE/E-COMMERCE-PROJECT", 
     img: "homeEshopZTM",
