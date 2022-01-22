@@ -59,7 +59,7 @@ export const workData = [
     title: "GetReadii",
     desc:
       "Réalisation de la partie front-end de cette application web destinée aux managers d'une entreprise afin de faciliter l'arrivée de leurs nouvelles recrues. ",
-    technologies: ["React", "React-router-dom", "Redux", "SASS","Firebase"],
+    technologies: ["React", "React-router-dom", "Redux", "SASS","Firebase", "Styled-Component", "Bootstrap"],
     website: "https://fr.getreadii.com/",
     github: "",
     img: "homeGetReadii",
