@@ -143,7 +143,7 @@ export const workData = [
     icon: "MdWeb",
     title: "YourPlaces",
     desc:
-      "Site pour permettre aux utilisateur d'enregistrer leurs lieux favoris en utilisant les technologies MERN (MongoDB Express React NodeJS). Projet réalisé pas à pas avec un cours (sauf partie React).",
+      "Site pour permettre à ses utilisateurs de s'identifier et d'enregistrer leurs lieux favoris en utilisant les technologies MERN (MongoDB Express React NodeJS). Projet réalisé pas à pas avec un cours.",
     technologies: ["React", "NodeJS", "MongoDb", "Express"],
     website: "",
     github: "https://github.com/jeanlouisHERVE/YOURPLACES-PROJECT-BACKEND", 
