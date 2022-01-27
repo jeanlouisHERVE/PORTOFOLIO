@@ -4,8 +4,8 @@ import findImgByKey from '../../utils/img'
 //import icons from react-icons
 import { Tooltip } from '@mui/material';
 import { IconContext } from "react-icons";
-import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe} from 'react-icons/fa';
-import { SiRedux, SiReactrouter, SiFirebase, SiMysql, SiJavascript, SiStyledcomponents } from 'react-icons/si'
+import { FaGithub, FaChrome, FaSass, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaBootstrap, FaCcStripe, FaNodeJs} from 'react-icons/fa';
+import { SiRedux, SiReactrouter, SiFirebase, SiMysql, SiJavascript, SiStyledcomponents, SiMongodb, SiExpress} from 'react-icons/si'
 
 const CardWorksMobile = ({project}) => {
   const {title, desc, technologies, github, mobileImg, website} = project; 
@@ -35,7 +35,10 @@ const CardWorksMobile = ({project}) => {
         ((item === "Javascript") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><SiJavascript/></IconContext.Provider></div></> : null) ||
         ((item === "Styled-Component") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><SiStyledcomponents/></IconContext.Provider></div></> : null) ||
         ((item === "Stripe") ? <><div key={index} className="CardWorksMobile--echnology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><FaCcStripe/></IconContext.Provider></div></> : null) ||
-        ((item === "MySQL") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><SiMysql/></IconContext.Provider></div></> : null) 
+        ((item === "MySQL") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><SiMysql/></IconContext.Provider></div></> : null) ||
+        ((item === "NodeJS") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><FaNodeJs/></IconContext.Provider></div></> : null) ||
+        ((item === "MongoDb") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><SiMongodb/></IconContext.Provider></div></> : null) ||
+        ((item === "Express") ? <><div key={index} className="CardWorksMobile--technology" ><IconContext.Provider  value={{ color: "black", size: "1em" }}><SiExpress/></IconContext.Provider></div></> : null)
         ))} 
       </div>
     </div> 

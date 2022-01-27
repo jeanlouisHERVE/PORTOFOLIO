@@ -18,24 +18,30 @@ export const featuredPortfolio = [
 export const webPortfolio = [
   {
     id: 1,
+    title: "YourPlaces",
+    year: "2022",
+    img: "homeYourPlaces",
+  },
+  {
+    id: 2,
     title: "Eshop - ZTM",
     year: "2021",
     img: "homeEshopZTM",
   },
   {
-    id: 2,
+    id: 3,
     title: "PaulKichilov",
     year: "2021",
     img: "homePaulKichilov",
   },
   {
-    id: 3,
+    id: 4,
     title: "GreceAntique.fr",
     year: "2021",
     img: 'homeGreceAntique',
   },
   {
-    id: 4,
+    id: 5,
     title: "jeanlouisherve.fr",
     year: "2021",
     img: 'homePortfolio',
@@ -130,5 +136,19 @@ export const workData = [
     github: "https://github.com/jeanlouisHERVE/PORTOFOLIO", 
     img: "homePortfolio",
     mobileImg: "homePortfolio",
+  },
+  {
+    id: "7",
+    year: "2021",
+    icon: "MdWeb",
+    title: "YourPlaces",
+    desc:
+      "Site pour permettre aux utilisateur d'enregistrer leurs lieux favoris en utilisant les technologies MERN (MongoDB Express React NodeJS). Projet réalisé pas à pas avec un cours (sauf partie React).",
+    technologies: ["React", "NodeJS", "MongoDb", "Express"],
+    website: "",
+    github: "https://github.com/jeanlouisHERVE/YOURPLACES-PROJECT-BACKEND", 
+    course: "https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide",
+    img: "homeYourPlaces",
+    mobileImg: "homeYourPlaces",
   },
 ];
