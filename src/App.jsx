@@ -10,12 +10,26 @@ import WorksMobile from './components/WorksMobile';
 import Intro from "./components/Intro";
 import Menu from "./components/Menu";
 
+function useWindowSize() {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth)
+    }
+    window.addEventListener("resize", handleResize)
+  }, [])
+  return width
+}
+
+
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
   
+  const widthScreen = useWindowSize();
+
   const renderComponent = () => {
-    if (width < 600) {
+    if (widthScreen < 700) {
       return <WorksMobile/>;
     } else {
       return <Works />;
