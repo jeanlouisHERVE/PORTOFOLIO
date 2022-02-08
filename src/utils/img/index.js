@@ -12,6 +12,9 @@ import homeStadium from '../../../src/assets/img/home-stadium600.png';
 import profil from '../../../src/assets/img/profil500.png';
 import shakeHands from '../../../src/assets/shake.svg';
 import arrowDown from '../../../src/assets/down.png';
+import oclock from '../../../src/assets/img/Oclock.png';
+import lacapsule from '../../../src/assets/img/Lacapsule.png';
+import udemy from '../../../src/assets/img/Udemy.png';
 
 const imgs = {
   profil,
@@ -28,6 +31,9 @@ const imgs = {
   homeStadium,
   dashboardManagerGetReadii,
   arrowDown,
+  oclock,
+  lacapsule,
+  udemy
 };
 
 const findImgByKey = (imgKey) => imgs[imgKey];

@@ -74,7 +74,6 @@ export default function Works() {
                     : <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Non publié" placement="bottom"><HiStatusOffline style={{ marginRight: '5px', color: 'black' }}/></Tooltip></IconContext.Provider></>
                   }
                   {d.course && d.course ? <><IconContext.Provider  value={{ color: "black", size: "1.5em" }}><Tooltip title="Cours" placement="bottom"><a href={d.course} target="_blank" rel="noreferre"><FaChalkboardTeacher style={{ marginRight: '5px', cursor : 'pointer', color: 'black' }}/></a></Tooltip></IconContext.Provider></> : null}
-                
                 </div>
               </div>
             </div>
