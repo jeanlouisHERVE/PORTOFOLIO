@@ -66,9 +66,18 @@ export default function Training() {
   return (
     <div className="trainings" id="trainings">
       <h1>Formations</h1>
-      <div className="container">
+      <div className="trainings--container">
         {trainings.map((training) => (
-            <div>
+            <div className='trainings--content'>
+                <div className='trainings--leftside'>
+
+                </div>
+                <div className='trainings--middleside'>
+
+                </div>
+                <div className='trainings--rightside'>
+
+                </div>
 
             </div>
           ))}
