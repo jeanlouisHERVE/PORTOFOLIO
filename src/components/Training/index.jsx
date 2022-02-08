@@ -22,7 +22,7 @@ export default function Training() {
     },
     {
       id: 2,
-      yearStart: "2021",
+      yearStart: "2020",
       yearEnd: "2021",
       organism: "O'Clock",
       title: "Formateur développeur Web",
