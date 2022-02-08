@@ -8,6 +8,7 @@ import Topbar from "./components/Topbar";
 import Works from "./components/Works";
 import WorksMobile from './components/WorksMobile';
 import Intro from "./components/Intro";
+import Training from "./components/Training";
 import Menu from "./components/Menu";
 
 function useWindowSize() {
@@ -44,6 +45,7 @@ function App() {
         <Intro />
         <Portfolio />
         {renderComponent()} 
+        <Training />
         {/* <Testimonials /> */}
         <Contact />
      </div>
