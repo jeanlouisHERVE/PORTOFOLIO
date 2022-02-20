@@ -1,5 +1,5 @@
 import './styles.scss';
-import { Progress } from 'reactstrap';
+import {Progress} from 'reactstrap';
 import findImgByKey from '../../utils/img';
 import { IconContext } from "react-icons";
 import { Tooltip } from '@mui/material';
@@ -91,8 +91,8 @@ export default function Training() {
                   <h1>{training.title}</h1>
                   <p>{training.desc}</p>
                   <div className="trainings--progressbar">
-                    <Progress animated value={training.percentage} style={{height:'22px', width:'100%'}}/>
-                    <p>{Math.round(training.percentage)}% Complete</p>
+                      <Progress animated value={training.percentage} label={`${training.percentage}%`} style={{height:'22px', width:'100%'}}>{training.percentage}%</Progress>
+                      {/* <p>{Math.round(training.percentage)}% Complete</p> */}
                   </div>
                 </div>
             </div>
